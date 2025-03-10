@@ -1,3 +1,7 @@
+// Programmer: Tyler Matheny date: 1/29/2025
+// File: Getting to know you!!.cpp
+// Purpose: This code is written for getting to know the user and for them to get to know me.
+
 #include <iostream>
 #include <string>
 
@@ -8,8 +12,7 @@ int main() {
 	string color;
 
 	cout << "What is your favorite color?" << endl;
-	cin >> color;
-
+	getline(cin, color);
 	if (color == "purple") {
 		cout << "Awesome!! Thats mine too!" << endl;
 	}
@@ -23,9 +26,11 @@ int main() {
 	string animal;
 
 	cout << "What are your favorite animals?" << endl;
-	cin >> animal;
-
+	getline(cin, animal);
 	if (animal == "monkeys") {
+		cout << "That's cool!! I love monkeys too!" << endl;
+	}
+	else if (animal == "Monkeys") {
 		cout << "That's cool!! I love monkeys too!" << endl;
 	}
 	else {
@@ -35,8 +40,7 @@ int main() {
 	string sport;
 
 	cout << "What is your favorite sport?" << endl;
-	cin >> sport;
-
+	getline(cin, sport);
 	if (sport == "swimming") {
 		cout << "That's awesome!! I love swimming too!" << endl;
 	}
@@ -50,8 +54,7 @@ int main() {
 	string band;
 
 	cout << "Who is your favorite band or artist?" << endl;
-	cin >> band;
-
+	getline(cin, band);
 	if (band == "metallica") {
 		cout << "That's awesome!! Thats mine too!" << endl;
 	}
@@ -65,7 +68,7 @@ int main() {
 	string food;
 
 	cout << "What is your favorite food?" << endl;
-	cin >> food;
+	getline(cin, food);
 
 	if (food == "Steak") {
 		cout << "Mmmmh, thats mine too!!" << endl;
@@ -74,7 +77,7 @@ int main() {
 		cout << "Mmmmh, thats mine too!!" << endl;
 	}
 	else {
-		cout << "Mmmmh, " << food << " is delicicios! Mine is steak!" << endl;
+		cout << "Mmmmh, " << food << " is delicious! Mine is steak!" << endl;
 	}
 
 	cout << "" << endl;
